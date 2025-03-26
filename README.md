@@ -16,22 +16,7 @@ First, clone the repository to your local machine:
 git clone https://github.com/naquiyaa/csv-processor.git
 ```
 
-### 1️⃣ Running the Frontend
-
-1. Navigate to the `frontend` folder:
-   ```sh
-   cd frontend
-   ```
-2. Install dependencies:
-   ```sh
-   npm install
-   ```
-3. Start the development server:
-   ```sh
-   npm run dev
-   ```
-
-### 2️⃣ Running the Backend
+### 1️⃣ Running the Backend
 
 1. Navigate to the `backend` folder:
    ```sh
@@ -45,7 +30,20 @@ git clone https://github.com/naquiyaa/csv-processor.git
    ```sh
    npm run dev
    ```
+### 2️⃣ Running the Frontend
 
+1. Navigate to the `frontend` folder:
+   ```sh
+   cd frontend
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm run dev
+   ```
 ## 📌 Notes
 - Make sure you have **Node.js** and **npm** installed.
 - Run the backend **before** the frontend to ensure API connections work correctly.
