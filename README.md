@@ -8,6 +8,14 @@ This project consists of two main parts:
 
 ## 🚀 Getting Started
 
+📥 Cloning the Repository
+
+First, clone the repository to your local machine:
+
+```sh 
+git clone https://github.com/naquiyaa/csv-processor.git
+```
+
 ### 1️⃣ Running the Frontend
 
 1. Navigate to the `frontend` folder:
