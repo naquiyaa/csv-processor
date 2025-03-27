@@ -1,11 +1,19 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { cancelFile } from "@/lib/api";
 
 export default function CancelFile() {
   const [fileId, setFileId] = useState("");
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    if (message) {
+      const timer = setTimeout(() => setMessage(""), 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [message]);
+  
 
   const handleCancel = async () => {
     const trimmedFileId = fileId.trim();
@@ -22,6 +30,7 @@ export default function CancelFile() {
       console.log("trimmed file id: ", trimmedFileId);
       const res = await cancelFile(trimmedFileId);
       setMessage(res?.message || "File cancellation requested.");
+      setFileId("");
     } catch (error) {
       console.error("Error cancelling file:", error);
       setMessage("Failed to cancel file.");

@@ -6,6 +6,9 @@ This project consists of two main parts:
 - **Frontend** (located in the `frontend` folder)
 - **Backend** (located in the `backend` folder)
 
+## 📁 App Functionality
+https://www.loom.com/share/182a32d715a244cd86454b824d5f6431
+
 ## 🚀 Getting Started
 
 📥 Cloning the Repository
